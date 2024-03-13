@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determining a Trtiangle</title>
+</head>
+<body>
+    <script>
+            var a = prompt("Please enter the length of side A");
+            var b = prompt("Please enter the length of side B");
+            var c = prompt("Please enter the length of side C");
+
+            
+            if (isNaN(a), isNaN(b), isNaN(c)) {
+            window.alert("These are not valid numbers, please send actual numbers.");
+            }
+            else {
+            determineTriangle(a,b,c);
+            }
+
+        function determineTriangle(a,b,c) {
+            if (a==b && b==c){
+                window.alert("The Triangle is Equilateral.");
+            }
+            else if (a==b || a==c || b==c) {
+                window.alert("The Triangle is Isosceles.");
+            }
+            else{
+                window.alert("The Triangle is Scalene.");
+            }
+        }
+    </script>
+
+</body>
+</html>
